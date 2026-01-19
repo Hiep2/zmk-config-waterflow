@@ -36,12 +36,11 @@
 &tog 3  &lt 1 DEL  &kp SPACE  &mt LSHIFT TAB  &mkp LCLK    &mkp RCLK  &kp ESC  &kp BSPC   &lt 2 RET  &tog 4
             >;
 
-            sensor-bindings = <
-                &inc_dec_kp PAGE_DOWN PAGE_UP
-                &inc_dec_kp C_VOL_DN C_VOL_UP
-                &inc_dec_kp DOWN UP
-                &inc_dec_kp LEFT RIGHT
-            >;
+            sensor-bindings =
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
+                <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>,
+                <&inc_dec_kp DOWN UP>,
+                <&inc_dec_kp LEFT RIGHT>;
         };
 
         navnum_layer {
@@ -60,18 +59,17 @@
  */
 
             bindings = <
-&kp HOME  &trans     &kp UP     &trans          &kp LBKT    &kp RBKT  &kp N7   &kp N8    &kp N9     &kp MINUS
-&kp END   &kp LEFT   &kp DOWN   &kp RIGHT       &kp LBRC    &kp RBRC  &kp N4   &kp N5    &kp N6     &kp PLUS
-&trans    &trans     &trans     &kt N0          &kp LPAR    &kp RPAR  &kp N1   &kp N2    &kp N3     &kp ASTERISK
-&trans    &lt 1 DEL  &kp SPACE  &mt LSHIFT TAB  &to 0       &kp N3    &kp ESC  &kp BSPC  &lt 2 RET  &trans
+&kp HOME      &trans     &kp UP     &trans          &kp LBKT    &kp RBKT  &kp N7   &kp N8    &kp N9  &kp MINUS
+&kp END       &kp LEFT   &kp DOWN   &kp RIGHT       &kp LBRC    &kp RBRC  &kp N4   &kp N5    &kp N6  &kp PLUS
+&kp LEFT_GUI  &trans     &trans     &trans          &kp LPAR    &kp RPAR  &kp N1   &kp N2    &kp N3  &kp ASTERISK
+&trans        &lt 1 DEL  &kp SPACE  &mt LSHIFT TAB  &to 0       &kp N3    &kp ESC  &kp BSPC  &kp N0  &trans
             >;
 
-            sensor-bindings = <
-                &inc_dec_kp PAGE_DOWN PAGE_UP
-                &inc_dec_kp C_VOL_DN C_VOL_UP
-                &inc_dec_kp DOWN UP
-                &inc_dec_kp LEFT RIGHT
-            >;
+            sensor-bindings =
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
+                <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>,
+                <&inc_dec_kp DOWN UP>,
+                <&inc_dec_kp LEFT RIGHT>;
         };
 
         symbol_layer {
@@ -96,20 +94,19 @@
 &kp TILDE  &lt 1 DEL  &kp SPACE  &mt LSHIFT TAB  &to 0              &kp N3     &kp ESC        &kp BSPC      &lt 2 RET  &kp GRAVE
             >;
 
-            sensor-bindings = <
-                &inc_dec_kp PAGE_DOWN PAGE_UP
-                &inc_dec_kp C_VOL_DN C_VOL_UP
-                &inc_dec_kp DOWN UP
-                &inc_dec_kp LEFT RIGHT
-            >;
+            sensor-bindings =
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
+                <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>,
+                <&inc_dec_kp DOWN UP>,
+                <&inc_dec_kp LEFT RIGHT>;
         };
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &mmv MOVE_UP    &trans           &trans       &trans     &trans  &trans  &trans  &trans
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans       &trans     &trans  &trans  &trans  &trans
+&trans  &trans          &trans          &trans           &mkp LCLK    &mkp RCLK  &trans  &trans  &trans  &trans
+&trans  &trans          &trans          &trans           &trans       &trans     &trans  &trans  &trans  &trans
             >;
         };
 
