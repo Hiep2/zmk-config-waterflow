@@ -138,7 +138,7 @@
 &trans        &lt 1 DEL     &kp SPACE     &kp TAB       &to 0           &bt BT_CLR_ALL  &kp ESC  &kp BSPC  &lt 2 RET  &trans
             >;
 
-            sensor-bindings = <
+            sensor-bindings =
                 <&inc_dec_kp DOWN UP>,
                 <&inc_dec_kp LC(EQUAL) LC(MINUS)>,
                 <&inc_dec_kp PAGE_DOWN PAGE_UP>,
