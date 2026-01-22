@@ -33,7 +33,7 @@
 &kp Q   &kp W      &kp E      &kp R           &kp T        &kp Y       &kp U    &kp I      &kp O      &kp P
 &kp A   &kp S      &kp D      &kp F           &kp G        &kp H       &kp J    &kp K      &kp L      &mt RCTRL SEMI
 &kp Z   &kp X      &kp C      &kp V           &kp B        &kp N       &kp M    &kp COMMA  &kp DOT    &mt LALT FSLH
-&tog 3  &lt 1 DEL  &kp SPACE  &mt LSHIFT TAB  &kp LC(N0)   &kp RC W    &kp ESC  &kp BSPC   &lt 2 RET  &tog 4
+&tog 3  &lt 1 DEL  &kp SPACE  &mt LSHIFT TAB  &kp LC(N0)   &kp RC (W)  &kp ESC  &kp BSPC   &lt 2 RET  &tog 4
             >;
 
             sensor-bindings =
